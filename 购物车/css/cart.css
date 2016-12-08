@@ -1,0 +1,462 @@
+@charset "utf-8";
+html,body{
+	padding:0;
+	margin:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+body{
+	background:#e9e9e9;
+}
+#top{
+	width:100%;
+	height:37px;
+	background:#f8f6f8;
+}
+#top .top-left{
+	float:left;
+	margin-left:88px;
+	width:400px;
+	height:100%;
+}
+#top .top-left li{
+	margin-top:4px;
+	float:left;
+	margin-right:20px;
+	line-height:37px;
+}
+#top .top-left .top-left-first{
+	margin-top:4px;
+	text-align:center;
+	width:96px;
+	height:36px;
+	border:1px solid #ccc;
+	border-bottom:none;
+	background-color:#fff;
+}
+#top .top-left li a{
+	font-size: 14px;
+}
+#top .top-left li a:hover{
+	color:#f60;
+}
+#top .top-left li.top-left-first a{
+	color:#ff5c00;
+}
+#background{
+	height:4px;
+	background:url(../img/px.jpg);
+}
+#top .top-left .top-left-third{
+	margin-left:20px;
+	position:relative;
+	padding:0 10px;
+	width:96px;
+	height:36px;
+}
+#top .top-left span{
+	margin-top:4px;
+	height:33px;
+	background:#e7e7e7;
+	float:left;
+	width:1px;
+}
+#top .top-left .top-left-third i {
+	display:inline-block;
+	margin-left:10px;
+	float:left;
+	margin-top:6px;
+	width:12px;
+	height:20px;
+	background:url(../img/blackphone.jpg)
+}
+#qrcode{
+	position:absolute;
+	left:10px;
+	top:36px;
+	border:1px solid #f60;
+	width:278px;
+	height:103px;
+	display:none;	
+}
+#top .top-left .top-left-third a{
+	margin-left:20px;
+}
+#top .top-left .top-left-third .top-third-phone{
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+#top .top-left .top-left-third:hover .top-third-phone{
+	background:#fff;
+	border:1px solid #FF6600;
+	border-bottom:none;
+	z-index:999;	
+}
+#top .top-left .top-left-third:hover #qrcode{
+	display:block;
+}
+#top .top-left .top-left-third:hover i{
+	background:url(../img/orangephone.jpg) no-repeat;
+}
+#top .top-left .top-left-third #qrcode a{
+	margin-left:0;
+}
+#top .top-right{
+    width:550px;
+    float:right;
+    line-height: 33px;
+	margin-right:50px;
+	height:33px;	
+}
+#top .top-right li{
+	line-height:33px;
+	display:inline-block;
+	padding:0 3px;
+	position:relative;
+	float:left;
+	top:10px;	
+}
+#top .top-right>span{
+	display:inline-block;
+	height:14px;
+	width:2px;
+	float:left;
+	margin:0 2px;
+	margin-top:8px;
+	background:#ccc;
+	position:relative;
+	top:10px;	
+}
+#top .top-right li.top-li-first{
+	color:#666;
+}
+#top .top-right li.top-li-first>a{
+	color:#FF6600;
+}
+#top .top-right li.top-li-second{
+	width:68px;
+}
+#top .top-right li.top-li-second .my-order{
+	height:28px;
+	line-height:32px;
+	text-align:left;
+	position:relative;
+	overflow:hidden;
+	width:68px;
+	z-index:80;
+}
+#top .top-right li.top-li-second .my-order-hide{
+	background-color:#fff;
+	border:1px solid #FF6600;
+	position:absolute;
+	text-align:left;
+	padding:4px 0 2px;
+	width:68px;
+	top:28px;
+	line-height:20px;
+	display:none;
+}
+#top .top-right li.top-li-second:hover .my-order{
+	border:1px solid #f60;
+	border-bottom:none;
+	background:#fff;
+}
+#top .top-right li.top-li-second:hover .my-order>a{
+	color:#f60;
+}
+#top .top-right li.top-li-second:hover 	.my-order-hide{
+	display:block;
+}	
+#top .top-right li.top-li-third{
+	width:66px;
+}
+#top .top-right li.top-li-third .client-service{
+	height:28px;
+	line-height:32px;
+	text-align:left;
+	position:relative;
+	overflow:hidden;
+	width:66px;
+	z-index: 80;
+}
+#top .top-right li.top-li-third .client-service-hide{
+	background-color:#fff;
+	border:1px solid #FF6600;
+	position:absolute;
+	text-align:left;
+	padding:4px 0 2px;
+	width:74px;
+	top:28px;
+	left:2;
+	line-height:20px;
+	display:none;
+}
+#top .top-right li.top-li-third:hover .client-service{
+	border:1px solid #f60;
+	border-bottom:none;
+	background:#fff;
+}
+#top .top-right li.top-li-third:hover .client-service>a{
+	color:#f60;
+}
+#top .top-right li.top-li-third:hover 	.client-service-hide{
+	display:block;
+}
+#top .top-right li.top-li-fourth:hover>a{
+	color:#f60;
+}
+#top .top-right li.top-li-last{
+	width:66px;
+}
+#top .top-right li.top-li-last .internet-guide{
+	height:28px;
+	line-height:32px;
+	text-align:left;
+	position:relative;
+	overflow:hidden;
+	width:62px;
+	padding-left:4px;
+	z-index: 80;
+}
+#top .top-right li.top-li-last .internet-guide-hide{
+	background-color:#fff;
+	border:1px solid #FF6600;
+	position:absolute;
+	text-align:left;
+	padding:4px 0 2px;
+	width:62px;
+	top:28px;
+	padding-left:4px;
+	left:2;
+	line-height:20px;
+	display:none;
+}
+#top .top-right li.top-li-last:hover .internet-guide{
+	border:1px solid #f60;
+	border-bottom:none;
+	background:#fff;
+}
+#top .top-right li.top-li-last:hover .internet-guide>a{
+	color:#f60;
+}
+#top .top-right li.top-li-last:hover .internet-guide-hide{
+	display:block;
+}
+#head{
+	height:115px;
+	border-bottom:1px solid #ccc;
+	background:#e9e9e9;
+}
+#head .head-left{
+	width:150px;
+	height:55px;
+	float:left;
+	margin:30px 0 30px 85px;
+}
+#head .head-right{
+	width:612px;
+	height:36px;
+	background: url(../img/cart-step1.png) no-repeat;
+	float:right;
+	margin-top:36px;
+	margin-right:15px;
+}
+#my-car{
+	width:1000px;
+	height:47px;
+	margin:0 auto 0;
+}
+#my-car h2{
+	font-size:18px;
+	color:#555;
+	background:url(../img/gouwuche.png) 0 5px no-repeat;
+	padding:10px 43px;
+}
+#main{
+	width:1000px;
+	border:1px solid #B5B5B5;
+	margin:0 auto 0;
+}
+#main .main-top{
+	height:42px;
+	border-bottom:1px solid #B5B5B5;
+	width:100%;
+	background:#F8F8F8;
+}
+#main .main-top .main-top-left{
+	width:500px;
+	height:100%;
+	float:left;
+}
+#main .main-top .main-top-left>a{
+	font:700 18px/42px "微软雅黑";
+	float:left;
+	margin-left:20px;	
+}
+#main .main-top .main-top-left>span{
+	font:12px/42px "";
+	float:left;
+	margin-left:10px;
+}
+#main .main-top .price{
+	display:block;
+	width:150px;
+	height:100%;
+	font:12px/42px "";
+	text-align:center;
+	float:left;
+}
+#main .main-top .number{
+	display:block;
+	width:100px;
+	height:100%;
+	font:12px/42px "";
+	text-align:center;
+	float:left
+}
+#main .main-top .priceall{
+	display:block;
+	width:125px;
+	height:100%;
+	font:12px/42px "";
+	text-align:center;
+	float:left
+}
+#main .main-top .action{
+	display:block;
+	width:70px;
+	height:100%;
+	font:12px/42px "";
+	text-align:center;
+	float:left
+}
+#main .goods-item{
+	height:74px;
+	padding:0 15px;
+	width:970px;
+	background:#fff;
+}
+#main .goods-item li{
+	width:100%;
+	height:100%;
+}
+#main .goods-item li .goods-img{
+	float:left;
+	margin-top:5px;
+	width:60px;
+	height:60px;
+}
+#main .goods-item li a img{
+	width:60px;
+	height:60px;
+}
+#main .goods-item li .goods-name{
+	font:12px/74px "";
+	float:left;
+	margin-left:10px;
+}
+#main .goods-item li .goods-price{
+	display:block;
+	width:120px;
+	height:100%;
+	line-height:74px;
+	text-align:center;
+	float:left;
+	margin-left:65px;
+	color:#c33;
+	font-size:16px
+}
+#main .goods-item li .goods-number{
+	width:90px;
+	height:30px;
+	float:left;
+	margin-top:22px;
+	margin-left:26px;
+	border:1px solid #B5B5B5;
+}
+#main .goods-item li .goods-number .decrease{
+	width:24px;
+	height:30px;
+	float:left;
+	line-height: 30px;
+	text-align:center;
+	font-size:16px;
+	border-right:1px solid #B5B5B5;
+	cursor: pointer;
+}
+#main .goods-item li .goods-number input{
+	width:40px;
+	height:30px;
+	float:left;
+	outline:none;
+	border:none;
+	font:700 14px/30px "黑体";
+	text-align: center;
+}
+#main .goods-item li .goods-number .add{
+	width:24px;
+	height:30px;
+	float:left;
+	line-height: 30px;
+	text-align:center;
+	font-size:16px;
+	border-left:1px solid #B5B5B5;
+	cursor: pointer;
+}
+#main .goods-item li .goods-count{
+	display:block;
+	width:120px;
+	height:100%;
+	line-height:74px;
+	text-align:center;
+	float:left;
+	margin-left:10px;
+	color:#c33;
+	font-size:16px;
+}
+#main .goods-item li .goods-action{
+	display:block;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	float:left;
+	margin-top:17px;
+	margin-left:20px;
+}
+#main .main-bottom{
+	width:1000px;
+	height:55px;
+	margin:2px auto 0;
+	position:relative;
+}
+#main .main-bottom .tocash-number{
+	position:absolute;
+	left:545px;
+	top:18px;
+	font-size:14px;
+}
+#main .main-bottom .tocash-number b{
+	color:#c33;
+}
+#main .main-bottom .tocash-money{
+	font-size:24px;
+	position:absolute;
+	left:765px;
+	top:16px;
+	color:red;
+}
+#main .main-bottom .tocash-goods{
+	display:block;
+	width:145px;
+	height:55px;
+	position:absolute;
+	right:0;
+	background:#f60;
+	font:700 20px/55px "黑体";
+	color:#fff;
+	text-align:center;
+}
