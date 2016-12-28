@@ -1,0 +1,36 @@
+function Slide(elem1,elem2){
+	this.startX=null,
+	this.endX=null,
+	this.dom1=elem1,
+	this.dom2=elem2
+}
+Slide.prototype={
+	init:function(){
+		this.touch();
+	},
+	touch:function(){
+		this.dom1.on('touchstart',function(e){
+			startX=e.touches[0].clientX;
+			
+		})
+		this.dom1.on('touchmove',function(e){
+			endX=e.touches[0].clientX;
+		})
+		this.dom1.on('touchend',function(e){
+			if(startX-endX>70){
+				$(this).hide().siblings().show()
+			}
+		})
+		this.dom2.on('touchstart',function(e){
+			startX=e.touches[0].clientX;
+		})
+		this.dom2.on('touchmove',function(e){
+			endX=e.touches[0].clientX;
+		})
+		this.dom2.on('touchend',function(e){
+			if(startX-endX<70){
+				$(this).hide().siblings().show()
+			}
+		})
+	}
+}
