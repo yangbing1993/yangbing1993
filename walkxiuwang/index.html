@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="js/js/dist/css/swiper.css">
+	<link rel="stylesheet" href="js/swiper-animate/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/plugin/zepto.js"></script>
+	<script type="text/javascript" src="js/js/dist/js/swiper.js"></script>
+	<script src="js/swiper-animate/swiper.animate1.0.2.min.js"></script>
+	<script src="js/plugin/rem.js"></script>
+	<script src="js/plugin/vipspa.js"></script>
+	<script src="js/iscroll/src/iscroll.js"></script>
+</head>
+<body>
+	<header>
+		zxiu  走秀网
+	</header>
+	<div id="container">
+		
+	</div>
+	<footer>
+		<div><a href="#home">首页</a></div>
+		<div><a href="">分类</a></div>
+		<div><a href="">购物车</a></div>
+		<div><a href="">我的秀</a></div>
+		<div><a href="">更多</a></div>
+	</footer>
+	<script>
+		$(function(){
+			vipspa.start({
+				view:"#container",
+				router:{
+					"home":{
+						templateUrl:'view/home.html',
+						controller:'js/module/home.js'
+					},
+
+				}
+			})
+
+
+
+
+
+
+		})
+	</script>
+</body>
+</html>
